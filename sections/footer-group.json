@@ -1,1 +1,115 @@
-{"type":"footer","name":"Footer","sections":{"section_bfa9EJ":{"type":"section","name":"t:names.email_signup","settings":{"content_direction":"column","vertical_on_mobile":true,"horizontal_alignment":"flex-start","vertical_alignment":"center","align_baseline":false,"horizontal_alignment_flex_direction_column":"center","vertical_alignment_flex_direction_column":"center","gap":16,"section_width":"page-width","section_height":"","section_height_custom":50,"color_scheme":"scheme-4","background_media":"none","video_position":"cover","background_image_position":"cover","border":"none","border_width":1,"border_opacity":100,"border_radius":0,"toggle_overlay":false,"overlay_color":"#00000026","overlay_style":"solid","gradient_direction":"to top","padding-block-start":0,"padding-block-end":0}},"footer":{"type":"footer","settings":{"section_width":"page-width","gap":12,"color_scheme":"scheme-4","padding-block-start":0,"padding-block-end":0}},"utilities":{"type":"footer-utilities","blocks":{"copyright":{"type":"footer-copyright","settings":{"show_powered_by":false,"font_size":"0.75rem","case":"none"},"blocks":{}},"policy_list":{"type":"footer-policy-list","settings":{"font_size":"0.75rem","case":"none"},"blocks":{}},"social_icons":{"type":"social-links","settings":{"facebook_url":"https:\/\/www.facebook.com\/","instagram_url":"https:\/\/www.instagram.com\/dhatri_womensworld\/","youtube_url":"https:\/\/www.youtube.com","tiktok_url":"https:\/\/www.tiktok.com","twitter_url":"https:\/\/www.twitter.com","threads_url":"","linkedin_url":"","bluesky_url":"","snapchat_url":"","pinterest_url":"","tumblr_url":"","vimeo_url":"","custom_url":"https:\/\/www.whatsapp.com\/channel\/0029VbBvxNL4o7qIUhLuHK2k?utm_source=ig&utm_medium=social&utm_content=link_in_bio"},"blocks":{}}},"block_order":["copyright","policy_list","social_icons"],"settings":{"section_width":"page-width","gap":24,"divider_thickness":1,"color_scheme":"scheme-4","padding-block-start":20,"padding-block-end":20}}},"order":["section_bfa9EJ","footer","utilities"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "Footer",
+  "sections": {
+    "section_bfa9EJ": {
+      "type": "section",
+      "name": "t:names.email_signup",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 16,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "scheme-4",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "settings": {
+        "section_width": "page-width",
+        "gap": 12,
+        "color_scheme": "scheme-4",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "utilities": {
+      "type": "footer-utilities",
+      "blocks": {
+        "copyright": {
+          "type": "footer-copyright",
+          "settings": {
+            "show_powered_by": false,
+            "font_size": "0.75rem",
+            "case": "none"
+          },
+          "blocks": {}
+        },
+        "policy_list": {
+          "type": "footer-policy-list",
+          "settings": {
+            "font_size": "0.75rem",
+            "case": "none"
+          },
+          "blocks": {}
+        },
+        "social_icons": {
+          "type": "social-links",
+          "settings": {
+            "facebook_url": "https://www.facebook.com/people/Dhatri-Womens-World/61590135851833/?rdid=Apanb0t63pPs5G2y&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1EMr5op2sb%2F%3Futm_source%3Dig%26utm_medium%3Dsocial%26utm_content%3Dlink_in_bio",
+            "instagram_url": "https://www.instagram.com/dhatri_womensworld/",
+            "youtube_url": "https://www.youtube.com",
+            "tiktok_url": "https://www.tiktok.com",
+            "twitter_url": "https://www.twitter.com",
+            "threads_url": "",
+            "linkedin_url": "",
+            "bluesky_url": "",
+            "snapchat_url": "",
+            "pinterest_url": "",
+            "tumblr_url": "",
+            "vimeo_url": "",
+            "custom_url": "https://www.whatsapp.com/channel/0029VbBvxNL4o7qIUhLuHK2k?utm_source=ig&utm_medium=social&utm_content=link_in_bio"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "copyright",
+        "policy_list",
+        "social_icons"
+      ],
+      "settings": {
+        "section_width": "page-width",
+        "gap": 24,
+        "divider_thickness": 1,
+        "color_scheme": "scheme-4",
+        "padding-block-start": 20,
+        "padding-block-end": 20
+      }
+    }
+  },
+  "order": [
+    "section_bfa9EJ",
+    "footer",
+    "utilities"
+  ]
+}
