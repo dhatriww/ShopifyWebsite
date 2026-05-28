@@ -213,6 +213,18 @@
   {{ children }}
 </div>
 
+<script>
+  // Prevent the product link (<a class="contents">) from navigating
+  // when slideshow arrow buttons are clicked inside card galleries.
+  document.addEventListener('click', function(e) {
+    const control = e.target.closest('.card-gallery .slideshow-control');
+    if (control) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+  }, false);
+</script>
+
 {% stylesheet %}
   .card-gallery {
     overflow: hidden;
