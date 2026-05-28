@@ -377,7 +377,8 @@
           "cotton-sarees",
           "cotton-frocks",
           "fancy-sarees",
-          "silk-saree"
+          "silk-saree",
+          "lehenga"
         ],
         "layout_type": "grid",
         "carousel_on_mobile": false,
