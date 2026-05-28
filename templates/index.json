@@ -378,7 +378,8 @@
           "cotton-frocks",
           "fancy-sarees",
           "silk-saree",
-          "lehenga"
+          "lehenga",
+          "cord-set"
         ],
         "layout_type": "grid",
         "carousel_on_mobile": false,
