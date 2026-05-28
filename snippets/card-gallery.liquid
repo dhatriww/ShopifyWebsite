@@ -480,37 +480,72 @@
     }
   }
 
-  /* Show elegant compact arrow buttons on mobile for product card galleries */
+  /* Clean compact arrow buttons for product card galleries — all breakpoints */
+  .card-gallery slideshow-arrows {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    pointer-events: none !important;
+    z-index: var(--layer-raised) !important;
+    padding-inline: 6px !important;
+    mix-blend-mode: normal !important;
+  }
+
+  .card-gallery slideshow-arrows .slideshow-control {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    pointer-events: auto !important;
+    background: #ffffff !important;
+    border-radius: 50% !important;
+    width: 34px !important;
+    height: 34px !important;
+    min-width: 34px !important;
+    min-height: 34px !important;
+    padding: 0 !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+    color: #000000 !important;
+    opacity: 0 !important;
+    transition: opacity 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease !important;
+  }
+
+  .card-gallery:hover slideshow-arrows .slideshow-control,
+  .card-gallery slideshow-arrows .slideshow-control:focus-visible {
+    opacity: 1 !important;
+  }
+
+  .card-gallery slideshow-arrows .slideshow-control:hover {
+    transform: scale(1.08) !important;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2) !important;
+  }
+
+  .card-gallery slideshow-arrows .slideshow-control:active {
+    transform: scale(0.95) !important;
+  }
+
+  .card-gallery slideshow-arrows .slideshow-control svg {
+    width: 12px !important;
+    height: 12px !important;
+  }
+
+  /* Mobile: slightly smaller buttons, always visible */
   @media screen and (max-width: 749px) {
     .card-gallery slideshow-arrows {
-      position: absolute !important;
-      top: 0 !important;
-      left: 0 !important;
-      right: 0 !important;
-      bottom: 0 !important;
-      display: flex !important;
-      align-items: center !important;
-      justify-content: space-between !important;
-      pointer-events: none !important;
-      z-index: var(--layer-raised) !important;
       padding-inline: 4px !important;
     }
 
     .card-gallery slideshow-arrows .slideshow-control {
-      display: flex !important;
-      align-items: center !important;
-      justify-content: center !important;
-      pointer-events: auto !important;
-      background: rgba(255, 255, 255, 0.85) !important;
-      border-radius: 50% !important;
       width: 28px !important;
       height: 28px !important;
       min-width: 28px !important;
-      padding: 0 !important;
-      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12) !important;
-      color: #222 !important;
+      min-height: 28px !important;
       opacity: 0.9 !important;
-      transition: opacity var(--animation-speed-fast) var(--animation-easing) !important;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12) !important;
     }
 
     .card-gallery slideshow-arrows .slideshow-control svg {
