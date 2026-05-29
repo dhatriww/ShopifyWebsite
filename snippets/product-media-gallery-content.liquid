@@ -430,7 +430,7 @@
 
     {% if render_slideshow_arrows %}
       {% capture slideshow_arrows %}
-        {% render 'slideshow-arrows', class: 'mobile:hidden', icon_style: block_settings.icons_style %}
+        {% render 'slideshow-arrows', icon_style: block_settings.icons_style %}
       {% endcapture %}
     {% endif %}
 
@@ -1024,9 +1024,69 @@
     }
   }
 
+  /* White circular arrow buttons for product media gallery — matching card gallery style */
+  .media-gallery--carousel slideshow-arrows {
+    mix-blend-mode: normal !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding-inline: 8px !important;
+  }
+
   .media-gallery--carousel slideshow-arrows .slideshow-control {
-    padding-inline: 0 var(--padding-md);
-    opacity: 1;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    pointer-events: auto !important;
+    background: #ffffff !important;
+    border-radius: 50% !important;
+    width: 38px !important;
+    height: 38px !important;
+    min-width: 38px !important;
+    min-height: 38px !important;
+    padding: 0 !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+    color: #000000 !important;
+    opacity: 1 !important;
+    transition: opacity 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease !important;
+  }
+
+  .media-gallery--carousel slideshow-arrows .slideshow-control:hover {
+    transform: scale(1.08) !important;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2) !important;
+  }
+
+  .media-gallery--carousel slideshow-arrows .slideshow-control:active {
+    transform: scale(0.95) !important;
+  }
+
+  .media-gallery--carousel slideshow-arrows .slideshow-control[disabled] {
+    opacity: 0.35 !important;
+    cursor: not-allowed !important;
+  }
+
+  .media-gallery--carousel slideshow-arrows .slideshow-control svg {
+    width: 14px !important;
+    height: 14px !important;
+  }
+
+  /* Mobile: slightly smaller buttons, always visible */
+  @media screen and (max-width: 749px) {
+    .media-gallery--carousel slideshow-arrows {
+      padding-inline: 6px !important;
+    }
+
+    .media-gallery--carousel slideshow-arrows .slideshow-control {
+      width: 32px !important;
+      height: 32px !important;
+      min-width: 32px !important;
+      min-height: 32px !important;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12) !important;
+    }
+
+    .media-gallery--carousel slideshow-arrows .slideshow-control svg {
+      width: 12px !important;
+      height: 12px !important;
+    }
   }
 
   @media screen and (max-width: 749px) {
