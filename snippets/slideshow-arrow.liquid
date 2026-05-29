@@ -11,11 +11,15 @@
 {%- enddoc -%}
 
 {%- liquid
-  assign icon_name = 'arrow'
-  assign style = icon_style | default: 'arrow'
+  assign icon_name = 'chevron'
+  assign style = icon_style | default: 'chevron'
   assign shape = icon_shape | default: 'none'
 
-  if icon_style contains 'chevron'
+  if icon_style contains 'arrow'
+    assign icon_name = 'arrow'
+  endif
+
+  if icon_style contains 'caret'
     assign icon_name = 'caret'
   endif
 
@@ -31,7 +35,6 @@
     {% if shape != 'none' %} slideshow-control--shape-{{ shape }}{% endif %}
     slideshow-control--style-{{ style }}
     button button-unstyled button-unstyled--transparent
-    {% if action == 'previous' %} flip-x{% endif %}
   "
   {% # theme-check-disable %}
   aria-label="{{ 'accessibility.slideshow_' | append: action | t }}"
@@ -42,8 +45,12 @@
   <span class="svg-wrapper icon-{{ icon_name }}">
     {%- if icon_name == 'caret' -%}
       {{- 'icon-caret.svg' | inline_asset_content -}}
-    {%- else -%}
+    {%- elsif icon_name == 'arrow' -%}
       {{- 'icon-arrow.svg' | inline_asset_content -}}
+    {%- elsif action == 'previous' -%}
+      {{- 'icon-chevron-left.svg' | inline_asset_content -}}
+    {%- else -%}
+      {{- 'icon-chevron-right.svg' | inline_asset_content -}}
     {%- endif -%}
   </span>
 </button>

@@ -91,9 +91,9 @@
   {% if auto_hide_controls %}
     auto-hide-controls
   {% endif %}
-  {% unless infinite == false %}
+  {% if infinite == true %}
     infinite
-  {% endunless %}
+  {% endif %}
 
   {{ attributes }}
 >
